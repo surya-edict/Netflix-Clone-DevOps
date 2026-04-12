@@ -308,7 +308,7 @@ Add one or more of the following to raise engineering maturity:
 
 ### Docker
 
-The repository ships with a multi-stage [Dockerfile](file:///d:/INTERN/DEVOPS/Netflix/Dockerfile) that:
+The repository ships with a multi-stage [Dockerfile](./Dockerfile) that:
 
 - Installs dependencies
 - Injects the TMDB API key at build time
