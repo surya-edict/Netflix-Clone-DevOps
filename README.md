@@ -227,6 +227,10 @@ docker run -d --name netflix-clone -p 8081:80 netflix-clone-devsecops
 
 ## Architecture / Data Flow
 
+### DevOps Architecture
+
+![DevOps Architecture](./public/assets/DevOps.png)
+
 ### Application Flow
 
 ```mermaid
@@ -326,9 +330,9 @@ docker run -d --name netflix-clone -p 8081:80 netflix-clone-devsecops
 
 The repository includes:
 
-- [deployment.yml](file:///d:/INTERN/DEVOPS/Netflix/Kubernetes/deployment.yml)
-- [service.yml](file:///d:/INTERN/DEVOPS/Netflix/Kubernetes/service.yml)
-- [node-service.yaml](file:///d:/INTERN/DEVOPS/Netflix/Kubernetes/node-service.yaml)
+- [deployment.yml](./Kubernetes/deployment.yml)
+- [service.yml](./Kubernetes/service.yml)
+- [node-service.yaml](./Kubernetes/node-service.yaml)
 
 Apply the manifests:
 
@@ -339,7 +343,7 @@ kubectl apply -f Kubernetes/service.yml
 
 ### Jenkins Pipeline
 
-The pipeline definition lives in [pipeline.txt](file:///d:/INTERN/DEVOPS/Netflix/pipeline.txt) and demonstrates:
+The pipeline definition lives in [pipeline.txt](./pipeline.txt) and demonstrates:
 
 - Source checkout
 - SonarQube integration
@@ -399,6 +403,6 @@ This README documents the project as **MIT licensed by default** unless you inte
 
 - A TMDB API key is required for the app to function correctly
 - The pipeline and Kubernetes files currently contain sample repository, image, credential, email, and cluster placeholders that should be updated before production use
-- Vercel routing support is present through [vercel.json](file:///d:/INTERN/DEVOPS/Netflix/vercel.json)
+- Vercel routing support is present through [vercel.json](./vercel.json)
 
 > Missing project details to fill in: actual production URL, final Docker image name, real Jenkins credential IDs, Kubernetes cluster/server details, notification email, and an explicit `LICENSE` file if the intended license is not MIT.
