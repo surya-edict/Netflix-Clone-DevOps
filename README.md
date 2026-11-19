@@ -154,19 +154,25 @@ git clone https://github.com/surya-edict/Netflix-Clone-DevOps.git
 cd Netflix-Clone-DevOps
 ```
 
-2. Install dependencies.
+2. Create a local environment file from the template and add your TMDB API key.
+
+```bash
+cp .env.example .env
+```
+
+3. Install dependencies.
 
 ```bash
 yarn install
 ```
 
-3. Start the development server.
+4. Start the development server.
 
 ```bash
 yarn dev
 ```
 
-4. Build for production.
+5. Build for production.
 
 ```bash
 yarn build
@@ -366,7 +372,7 @@ The repository documentation also outlines:
 
 ## Roadmap & Future Scope
 
-- [ ] Add `.env.example` for faster onboarding
+- [x] Add `.env.example` for faster onboarding
 - [ ] Add automated unit and integration tests
 - [ ] Replace placeholder Docker registry/image references with project-specific values
 - [ ] Parameterize Jenkins credentials and deployment targets
