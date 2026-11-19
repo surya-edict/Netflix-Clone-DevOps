@@ -347,6 +347,19 @@ kubectl apply -f Kubernetes/deployment.yml
 kubectl apply -f Kubernetes/service.yml
 ```
 
+The service is exposed as a `NodePort` on port `30007`. Once the pods are ready, open the app at:
+
+```text
+http://<node-ip>:30007
+```
+
+Check the rollout status with:
+
+```bash
+kubectl rollout status deployment/netflix-app
+kubectl get pods -l app=netflix-app
+```
+
 ### Jenkins Pipeline
 
 The pipeline definition lives in [pipeline.txt](./pipeline.txt) and demonstrates:
