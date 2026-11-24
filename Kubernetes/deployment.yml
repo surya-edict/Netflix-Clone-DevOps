@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: netflix-app
-        image: amitsinghs98/netflix:latest
+        # Use the image pushed by the Jenkins pipeline (DOCKER_IMAGE).
+        image: your-dockerhub-username/netflix-clone-devsecops:latest
         ports:
         - containerPort: 80
         resources:
