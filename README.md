@@ -128,7 +128,7 @@ flowchart LR
 
 Install the following before running the project:
 
-- Node.js 16+ 
+- Node.js 20 LTS or later
 - Yarn Classic or npm
 - Docker
 - A TMDB API key
